@@ -1,3 +1,53 @@
 body {
-  
+
+}
+
+header {
+  background: #004A80;
+  width: 100%;
+}
+
+.content-container {
+  width: 68%;
+  overflow: hidden;
+  margin: auto;
+  max-width: 980px;
+}
+
+#logo {
+
+}
+
+#logo img {
+  width: 173px;
+  height: 25px;
+}
+
+nav {
+
+}
+
+nav img {
+  width: 23px;
+  height: 23px;
+}
+
+/* Tablet size */
+@media screen and (max-width: 768px) {
+
+  .content-container {
+    width: 93.4%;
+    max-width: 718px;
+  }
+
+}
+
+/* Mobile size */
+@media screen and (max-width: 320px) {
+
+  .content-container {
+    width: 90.6%;
+    max-width: 290px;
+  }
+
 }
