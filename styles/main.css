@@ -5,6 +5,7 @@ body {
 header {
   background: #004A80;
   width: 100%;
+  line-height: 65px;
 }
 
 .content-container {
@@ -15,7 +16,7 @@ header {
 }
 
 #logo {
-
+  float: left;
 }
 
 #logo img {
@@ -24,7 +25,12 @@ header {
 }
 
 nav {
+  float: right;
+}
 
+nav ul li {
+  display: inline-block;
+  padding-right: 20px;
 }
 
 nav img {
