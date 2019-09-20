@@ -2,6 +2,7 @@ body {
 
 }
 
+/* Start of header styles */
 header {
   background: #004A80;
   width: 100%;
@@ -37,6 +38,87 @@ nav img {
   width: 23px;
   height: 23px;
 }
+/* End  of header styles */
+
+/* Start of Search section styles */
+#search-section {
+  background: #004A80;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  line-height: 80px;
+}
+
+#search-section h1 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 52px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+#search-section p {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #F6BC25;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+#search-section span {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  color: #ffffff;
+  line-height: 29px;
+}
+
+#search-section form {
+  width: 100%;
+}
+
+#email-input {
+  width: 75%;
+  background: #FFFFFF;
+  box-shadow: inset 0 -1px 4px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 3px;
+  border-radius: 3px;
+  height: 70px;
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #9B9B9B;
+  letter-spacing: 2px;
+  line-height: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#email-input:focus {
+  border: 2px solid #F6BC25;
+}
+
+#search-button {
+  width: 20%;
+  background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
+  box-shadow: 0 3px 0 0 #A6953B, inset 0 1px 0 0 #FFFFFF;
+  border-radius: 6px;
+  height: 70px;
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #004A80;
+  letter-spacing: 1px;
+  text-align: center;
+  float: right;
+}
+
+#search-section form p{
+  text-align: left;
+  font-size: 16px;
+}
+
+#search-section form p img {
+  width: 15px;
+  height: 19px;
+}
+/* Start of Search section styles */
 
 /* Tablet size */
 @media screen and (max-width: 768px) {
@@ -44,6 +126,14 @@ nav img {
   .content-container {
     width: 93.4%;
     max-width: 718px;
+  }
+
+  #search-section h1{
+    font-size: 48px;
+  }
+
+  #search-section p {
+    font-size: 20px;
   }
 
 }
@@ -54,6 +144,14 @@ nav img {
   .content-container {
     width: 90.6%;
     max-width: 290px;
+  }
+
+  #search-section h1{
+    font-size: 38px;
+  }
+
+  #search-section p {
+    font-size: 18px;
   }
 
 }
