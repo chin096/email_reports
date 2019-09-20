@@ -109,6 +109,15 @@ nav img {
   float: right;
 }
 
+#search-button:hover {
+  background: #F2DA56;
+  cursor: pointer;
+}
+
+#search-button:active {
+  background: #F6BC25;
+}
+
 #search-section form p{
   text-align: left;
   font-size: 16px;
@@ -118,7 +127,156 @@ nav img {
   width: 15px;
   height: 19px;
 }
-/* Start of Search section styles */
+/* End of Search section styles */
+
+/* Start of Search Info section styles */
+#search-info-section {
+  width: 100%;
+  background-image: linear-gradient(0deg, #E6E6E6 0%, #FFFFFF 100%);
+  box-sizing: border-box;
+  padding: 40px;
+  letter-spacing: 0;
+}
+
+#search-info-section h1 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 52px;
+  color: #004A80;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 70px;
+}
+
+#search-info-section p {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #4A4A4A;
+  line-height: 30px;
+}
+
+#search-info-section .services-info {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#search-info-section .services-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: inline-block;
+}
+
+#search-info-section .services-item h2 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #004A80;
+}
+
+#search-info-section .services-item p {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  line-height: 26px;
+  margin-top: 10px;
+}
+/* End of Search Info section styles */
+
+/* Start of footer styles */
+footer {
+  background: #FFFFFF;
+  padding: 30px;
+}
+
+footer div {
+  display: inline-block;
+}
+
+footer #footer-text {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #999999;
+  line-height: 20px;
+  max-width: 960px;
+}
+
+footer #footer-nav a, footer #footer-nav span {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #004A80;
+}
+/* End of footer styles */
+
+/* Start of Result section styles */
+#result-section {
+  background: #F8F8F8;
+  padding: 20px;
+  letter-spacing: 0;
+}
+
+#result-section h1 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 52px;
+  color: #004A80;
+  text-align: center;
+}
+
+#result-section p {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  line-height: 32px;
+}
+
+#results-box {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#results-box h2 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 32px;
+  color: #004A80;
+}
+
+#results-box p {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  line-height: 26px;
+  text-align: left;
+}
+
+#results-box div {
+  display: inline-block;
+  width: 45%;
+  float: left;
+  margin-top: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#results-box div h3 {
+  font-family: HelveticaNeue-Bold, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #004A80;
+}
+
+#results-box div ul li {
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #004A80;
+  line-height: 26px;
+}
+/* End of Result section styles */
 
 /* Tablet size */
 @media screen and (max-width: 768px) {
@@ -128,12 +286,24 @@ nav img {
     max-width: 718px;
   }
 
-  #search-section h1{
+  #search-section {
+    line-height: 40px;
+  }
+
+  #search-section h1, #search-info-section h1, #result-section h1 {
     font-size: 48px;
   }
 
-  #search-section p {
+  #search-section p, #search-info-section p, #result-section p {
     font-size: 20px;
+  }
+
+  #search-info-section .services-item h2 {
+    font-size: 20px;
+  }
+
+  #search-info-section .services-item p {
+    font-size: 16px;
   }
 
 }
@@ -146,12 +316,32 @@ nav img {
     max-width: 290px;
   }
 
-  #search-section h1{
-    font-size: 38px;
+  #search-section {
+    line-height: 20px;
   }
 
-  #search-section p {
+  #search-section h1, #search-info-section h1, #result-section h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  #search-section p, #search-info-section p, #result-section p {
     font-size: 18px;
+  }
+
+  #email-input {
+    width: 100%;
+    height: 50px;
+  }
+
+  #search-button {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  #search-info-section .services-info{
+    width: 100%;
   }
 
 }
