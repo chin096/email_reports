@@ -95,6 +95,14 @@ nav img {
   border: 2px solid #F6BC25;
 }
 
+.error {
+  border: 2px solid #DC0015;
+}
+
+.error::placeholder {
+  color: #DC0015;
+}
+
 #search-button {
   width: 20%;
   background-image: linear-gradient(225deg, #F2DA56 0%, #F6BC25 100%);
